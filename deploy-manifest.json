@@ -1,0 +1,15 @@
+{
+  "kind": "arcgis-nova-deployable-app",
+  "version": "0.1",
+  "generatedAt": "2026-11-06T04:44:02.367Z",
+  "title": "ISS // Orbital Telemetry",
+  "authMode": "public",
+  "entry": "index.html",
+  "sourceAppPath": "outputs/apps/2026-11-06T04-43-09-eef22dd6-4f00-4e66-9c0a-6f4589913234/index.html",
+  "files": {
+    "app": "app.json",
+    "map": "scene.json",
+    "runtime": "app.js",
+    "auth": "standalone-auth.js"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "operationalLayers": [
+    {
+      "id": "1a1af2ebe5b-layer-59",
+      "title": "ISS near-live position (source)",
+      "url": "https://services.arcgis.com/9PtzeAadJyclx9t7/arcgis/rest/services/ISSNowAlmost/FeatureServer/0",
+      "visibility": false,
+      "itemId": "0272f3e75af14fa08d98249dbca5bbf4",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "Latitude",
+            "fieldFormat": {
+              "type": "number",
+              "minimumFractionDigits": 2,
+              "useGrouping": "always"
+            }
+          },
+          {
+            "name": "Longitude",
+            "fieldFormat": {
+              "type": "number",
+              "minimumFractionDigits": 2,
+              "useGrouping": "always"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "1a1af2f44c5-layer-60",
+      "title": "ISS position archive (24h replay source)",
+      "url": "https://services1.arcgis.com/XzB6UXTF2mIXSyp3/arcgis/rest/services/ISS_Archiv_Sicht_Viewer/FeatureServer/0",
+      "visibility": false,
+      "itemId": "883c94c30eba4eb380af2a753e24788c",
+      "layerType": "ArcGISFeatureLayer",
+      "layerDefinition": {
+        "fieldConfigurations": [
+          {
+            "name": "Datum",
+            "fieldFormat": {
+              "type": "date-time",
+              "dateStyle": "short",
+              "hour12": "always",
+              "timeStyle": "short"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "baseMap": {
+    "baseMapLayers": [
+      {
+        "id": "satellite-base-layer",
+        "showLegend": false,
+        "opacity": 1,
+        "title": "World Imagery",
+        "url": "https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer",
+        "visibility": true,
+        "layerType": "ArcGISTiledMapServiceLayer"
+      }
+    ],
+    "id": "satellite",
+    "title": "Imagery",
+    "elevationLayers": []
+  },
+  "ground": {
+    "layers": [],
+    "transparency": 0,
+    "groundId": "world-elevation"
+  },
+  "heightModelInfo": {
+    "heightModel": "gravity_related_height",
+    "heightUnit": "meter"
+  },
+  "version": "1.40",
+  "authoringApp": "ArcGIS API for JavaScript",
+  "authoringAppVersion": "5.1",
+  "spatialReference": {
+    "latestWkid": 3857,
+    "wkid": 102100
+  },
+  "viewingMode": "global",
+  "initialState": {
+    "environment": {
+      "lighting": {
+        "type": "virtual"
+      },
+      "atmosphereEnabled": false,
+      "starsEnabled": false,
+      "weather": {
+        "type": "sunny",
+        "cloudCover": 0.5
+      }
+    },
+    "viewpoint": {
+      "targetGeometry": {
+        "spatialReference": {
+          "latestWkid": 3857,
+          "wkid": 102100
+        },
+        "xmin": -19973944.91354728,
+        "ymin": -19971868.88040671,
+        "xmax": 20037508.342788905,
+        "ymax": 19971868.88040671
+      }
+    }
+  }
+}

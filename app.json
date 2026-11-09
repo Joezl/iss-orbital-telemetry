@@ -1,0 +1,125 @@
+{
+  "version": "0.3",
+  "kind": "app",
+  "generatedAt": "2026-11-06T04:43:09.349Z",
+  "item": {
+    "title": "ISS // Orbital Telemetry",
+    "subtitle": "Live position · available-history replay"
+  },
+  "map": {
+    "type": "webscene",
+    "path": "./scene.json"
+  },
+  "app": {
+    "template": "nova-app",
+    "preset": "immersive",
+    "showHeader": true,
+    "theme": {
+      "mode": "dark",
+      "accent": "teal",
+      "overrides": {
+        "dark": {
+          "background": "#080f1c",
+          "surface": "#101c2b",
+          "surfaceRaised": "#182a3b",
+          "foreground": "#e0f6f7",
+          "foregroundMuted": "#9cbbc4",
+          "border": "#2d5363",
+          "accent": "#48e0db",
+          "accentHover": "#74f2e9",
+          "accentActive": "#28bbb9",
+          "accentLabel": "#071a20"
+        },
+        "typography": {
+          "fontFamily": "'SF Mono', Menlo, Consolas, monospace",
+          "bodySize": 13,
+          "headingSize": 16,
+          "titleSize": 24,
+          "titleWeight": 700,
+          "titleLetterSpacing": 0.04
+        },
+        "radius": 4,
+        "overlay": {
+          "opacity": 0.92,
+          "blur": 12
+        }
+      }
+    },
+    "layout": {
+      "left": {
+        "hidden": false,
+        "width": "300px",
+        "title": "ISS TRACKER",
+        "collapsed": false,
+        "blocks": [
+          {
+            "type": "customMount",
+            "id": "iss-controls"
+          }
+        ]
+      }
+    },
+    "layoutMode": "floating",
+    "widgets": [
+      {
+        "id": "default-home",
+        "type": "home",
+        "slot": "top-right",
+        "slotPinned": true,
+        "config": {}
+      },
+      {
+        "id": "default-scale-bar",
+        "type": "scaleBar",
+        "slot": "bottom-left",
+        "config": {}
+      }
+    ],
+    "interactions": [],
+    "behaviors": [
+      {
+        "id": "iss-orbit-tracker",
+        "label": "Observed ISS telemetry, NASA 3D model and replay",
+        "bundlePath": "./runtime/behaviors/iss-orbit-tracker-7557b349882d9e2b.js",
+        "sourceSha256": "7557b349882d9e2b138081f77d9b32e982073dd45ff55312bc86746c8762be05",
+        "modulePaths": [
+          "esri/Graphic",
+          "esri/geometry/Point",
+          "esri/geometry/Polygon",
+          "esri/geometry/Polyline",
+          "esri/layers/BaseElevationLayer",
+          "esri/layers/GraphicsLayer",
+          "esri/webscene/Glow"
+        ],
+        "config": {
+          "liveLayerId": "1a1af2ebe5b-layer-59",
+          "archiveLayerId": "1a1af2f44c5-layer-60",
+          "nominalAltitudeKm": 420
+        },
+        "mounts": [
+          "iss-controls"
+        ],
+        "ownedLayerIds": [],
+        "interactions": [],
+        "installedAt": "2026-11-06T08:25:30.032Z"
+      }
+    ]
+  },
+  "nova": {
+    "basename": "eef22dd6-4f00-4e66-9c0a-6f4589913234",
+    "presentationMode": "app",
+    "ownedGraphicsLayerIds": [],
+    "origin": {
+      "portalUrl": "https://esridevbeijing.maps.arcgis.com",
+      "mapId": "output-b75ec00a-de7d-45bd-8479-a6f25b276837",
+      "mapName": "New Conversation",
+      "viewMode": "3d",
+      "capturedAt": "2026-11-06T04:44:02.367Z"
+    },
+    "sourceSelection": {
+      "mode": "all"
+    },
+    "unsupportedLayers": [],
+    "degradedFeatures": []
+  }
+}
